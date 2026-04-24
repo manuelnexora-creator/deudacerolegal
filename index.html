@@ -1125,7 +1125,7 @@ section { padding: 96px 0; }
       btnBack.disabled = currentStep === 0;
 
       if (stepData.type === 'options') {
-        optionsContainer.style.display = 'flex';
+        optionsContainer.style.display = 'grid';
         contactForm.style.display = 'none';
         
         let html = '';
@@ -1171,7 +1171,7 @@ section { padding: 96px 0; }
       
       quizCardMain.style.display = 'none';
       quizHeader.style.display = 'none';
-      quizCardDone.style.display = 'flex';
+      quizCardDone.style.display = 'block';
       
       const firstName = name.split(' ')[0];
       document.getElementById('quiz-done-title').textContent = `Gracias, ${firstName}.`;
